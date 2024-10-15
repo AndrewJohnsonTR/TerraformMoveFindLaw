@@ -8,8 +8,8 @@ terraform {
 }
 
 provider "cloudflare" {
-  api_key = "86ce36e380b4e10622314744086069c1cc0f4"
-  email = "andrew.m.johnson@thomsonreuters.com"
+  api_key = "add_your_api_key_here"
+  email = "add_your_email_here"
 }
 
 variable "account_id" {
