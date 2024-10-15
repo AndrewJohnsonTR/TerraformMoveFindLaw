@@ -1,0 +1,47 @@
+I changed the first item below to allow instead of skip in order to get it to run.
+
+│ Error: expected action to be one of [block challenge allow js_challenge managed_challenge log bypass], got skip
+│
+│   with cloudflare_firewall_rule.terraform_managed_resource_cb409020454c4663afb16b86ce0a67e2,
+│   on 84e8333ead725d2888ab564239d415d0_cloudflare_firewall_rule.tf line 119, in resource "cloudflare_firewall_rule" "terraform_managed_resource_cb409020454c4663afb16b86ce0a67e2":
+│  119:   action      = "skip"
+
+
+│ Error: failed to update '500_errors' custom page: Error fetching page: Unexpected status: 530 from https://www.findlaw-cloud-dev.com/cloudflare-error-page/?siteName=FindLaw&statusCode=500 (1201)
+│
+│   with cloudflare_custom_pages.terraform_managed_resource_500_errors,
+│   on 84e8333ead725d2888ab564239d415d0_cloudflare_custom_pages.tf line 1, in resource "cloudflare_custom_pages" "terraform_managed_resource_500_errors":
+│    1: resource "cloudflare_custom_pages" "terraform_managed_resource_500_errors" {
+│
+╵
+╷
+│ Error: failed to create page rule: Page Rule validation failed: See messages for details. (1004)
+│ .settings[1]: Invalid setting automatic_https_rewrites
+│
+│   with cloudflare_page_rule.terraform_managed_resource_dbf8a7818a685560ac14e6495e9f2103,
+│   on 84e8333ead725d2888ab564239d415d0_cloudflare_page_rule.tf line 296, in resource "cloudflare_page_rule" "terraform_managed_resource_dbf8a7818a685560ac14e6495e9f2103":
+│  296: resource "cloudflare_page_rule" "terraform_managed_resource_dbf8a7818a685560ac14e6495e9f2103" {
+│
+╵
+╷
+│ Error: error creating ruleset default: exceeded the maximum number of rules in the phase http_ratelimit: 1 out of 0 (50001)
+│
+│   with cloudflare_ruleset.terraform_managed_resource_32b71e5f103a4e9086c38153f4f9dabf,
+│   on 84e8333ead725d2888ab564239d415d0_cloudflare_ruleset.tf line 8, in resource "cloudflare_ruleset" "terraform_managed_resource_32b71e5f103a4e9086c38153f4f9dabf":
+│    8: resource "cloudflare_ruleset" "terraform_managed_resource_32b71e5f103a4e9086c38153f4f9dabf" {
+│
+╵
+╷
+│ Error: error creating ruleset default: action parameters are required for the set_cache_settings action (20106), action parameters are required for the set_cache_settings action (20106), action parameters are required for the set_cache_settings action (20106), action parameters are required for the set_cache_settings action (20106), action parameters are required for the set_cache_settings action (20106), action parameters are required for the set_cache_settings action (20106)
+│
+│   with cloudflare_ruleset.terraform_managed_resource_a9812172d05348fa87463d8c7b022f21,
+│   on 84e8333ead725d2888ab564239d415d0_cloudflare_ruleset.tf line 27, in resource "cloudflare_ruleset" "terraform_managed_resource_a9812172d05348fa87463d8c7b022f21":
+│   27: resource "cloudflare_ruleset" "terraform_managed_resource_a9812172d05348fa87463d8c7b022f21" {
+│
+╵
+╷
+│ Error: failed to create ruleset "http_request_firewall_custom" as a similar configuration with rules already exists and overwriting will have unintended consequences. If you are migrating from the Dashboard, you will need to first remove the existing rules otherwise you can remove the existing phase yourself using the API (https://api.cloudflare.com/#zone-rulesets-delete-zone-ruleset).
+│
+│   with cloudflare_ruleset.terraform_managed_resource_c1ed43dc2b024c6e928d8b35893ab66e,
+│   on 84e8333ead725d2888ab564239d415d0_cloudflare_ruleset.tf line 275, in resource "cloudflare_ruleset" "terraform_managed_resource_c1ed43dc2b024c6e928d8b35893ab66e":
+│  275: resource "cloudflare_ruleset" "terraform_managed_resource_c1ed43dc2b024c6e928d8b35893ab66e" {
